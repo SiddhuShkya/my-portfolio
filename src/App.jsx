@@ -1,7 +1,7 @@
 const profile = {
   name: 'Siddhartha Shakya',
   role: 'AI/ML Engineer • Data Scientist • Backend Architect',
-  location: 'Bangalore, India',
+  location: 'Dubai, UAE',
   summary:
     'I build production-ready AI systems with Python, SQL, and FastAPI, turning data into scalable insights and automated workflows.',
   stats: [
