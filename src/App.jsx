@@ -1,60 +1,60 @@
 const profile = {
-  name: 'Maya Chen',
-  role: 'Product Designer • Frontend Developer • Storyteller',
-  location: 'London, UK',
+  name: 'Siddhartha Shakya',
+  role: 'AI/ML Engineer • Data Scientist • Backend Architect',
+  location: 'Bangalore, India',
   summary:
-    'I build elegant digital experiences that feel effortless, convert better, and help teams ship with confidence.',
+    'I build production-ready AI systems with Python, SQL, and FastAPI, turning data into scalable insights and automated workflows.',
   stats: [
-    { label: 'Years crafting products', value: '7+' },
-    { label: 'Products launched', value: '32' },
-    { label: 'Happy collaborators', value: '18' }
+    { label: 'Years in AI/ML', value: '6+' },
+    { label: 'Data products shipped', value: '17' },
+    { label: 'Datasets modeled', value: '580+' }
   ]
 };
 
 const highlights = [
-  'Design systems with scalable UI foundations',
-  'Conversion-focused product storytelling',
-  'Cross-functional leadership from concept to launch'
+  'Python-driven model development and deployment',
+  'End-to-end ML pipelines with FastAPI and cloud data stores',
+  'SQL analytics, feature engineering, and real-time inference'
 ];
 
 const projects = [
   {
-    title: 'Northstar Studio',
-    type: 'SaaS launch experience',
-    description: 'Led the UX direction for a B2B platform refresh that helped increase qualified demos by 31%.'
+    title: 'Predictive Talent Engine',
+    type: 'ML system for recruitment',
+    description: 'Built a FastAPI service that scores candidate fit using structured HR data and production-grade feature pipelines.'
   },
   {
-    title: 'Lumen Analytics',
-    type: 'Dashboard redesign',
-    description: 'Reimagined a data-heavy interface into a calmer workflow for faster onboarding and weekly engagement.'
+    title: 'Sales Forecast Platform',
+    type: 'Demand forecasting solution',
+    description: 'Developed Python models and SQL ETL to predict weekly revenue for a retail chain across 120 stores.'
   },
   {
-    title: 'Halo Commerce',
-    type: 'E-commerce experience',
-    description: 'Crafted a mobile-first shopping journey with stronger clarity, faster checkout, and improved trust signals.'
+    title: 'Customer Insights API',
+    type: 'Real-time analytics service',
+    description: 'Delivered a FastAPI-backed data platform to serve personalized recommendations and segmentation data to marketing teams.'
   }
 ];
 
 const experience = [
-  { title: 'Senior Product Designer', period: '2022 — Present', company: 'Northstar Labs' },
-  { title: 'Frontend Developer', period: '2019 — 2022', company: 'Studio Vale' },
-  { title: 'Visual Designer', period: '2016 — 2019', company: 'Brightline Agency' }
+  { title: 'Senior AI/ML Engineer', period: '2023 — Present', company: 'Data Nexus Labs' },
+  { title: 'Data Scientist', period: '2020 — 2023', company: 'InsightFlow Analytics' },
+  { title: 'Machine Learning Engineer', period: '2018 — 2020', company: 'Apex Data Systems' }
 ];
 
 const testimonials = [
   {
-    quote: 'Maya brought calm precision to our launch and made complex product ideas feel beautifully simple.',
-    author: 'Alicia Hart',
-    role: 'VP Product, Northstar'
+    quote: 'Siddhartha turned our messy data into a reliable prediction service that became central to our operations.',
+    author: 'Neha Patel',
+    role: 'Head of Analytics, InsightFlow'
   },
   {
-    quote: 'Every interaction she designed felt intentional, polished, and genuinely user-centered.',
-    author: 'Jordan Singh',
-    role: 'Founder, Lumen'
+    quote: 'His API-first approach made integration seamless and accelerated the deployment of our analytics products.',
+    author: 'Rohan Mehta',
+    role: 'Product Lead, Data Nexus'
   }
 ];
 
-const skills = ['React', 'UI Systems', 'Figma', 'Motion Design', 'Accessibility', 'Next.js', 'Brand Strategy'];
+const skills = ['Python', 'SQL', 'FastAPI', 'Pandas', 'scikit-learn', 'Docker', 'AWS'];
 
 function App() {
   return (
@@ -63,7 +63,7 @@ function App() {
       <div className="background-orb orb-two" />
 
       <header className="topbar">
-        <div className="brand">Maya / Studio</div>
+        <div className="brand">Siddhartha / Labs</div>
         <nav className="nav-links">
           <a href="#about">About</a>
           <a href="#work">Work</a>
@@ -172,7 +172,7 @@ function App() {
 
       <footer className="footer-card" id="contact">
         <p className="eyebrow">Let’s build something refined</p>
-        <h3>hello@maya-chen.design</h3>
+        <h3>hello@siddharthashakya.ai</h3>
         <p>{profile.location} • Open to remote and hybrid collaborations</p>
       </footer>
     </div>
