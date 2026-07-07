@@ -1,5 +1,8 @@
-import React from 'react';
+import * as React from 'react';
 import ReactDOM from 'react-dom/client';
+// expose React as a global to avoid runtime reference issues in the
+// production bundle (ensures `React` is available in all module scopes)
+if (typeof window !== 'undefined') window.React = React;
 import App from './App';
 import './styles.css';
 
