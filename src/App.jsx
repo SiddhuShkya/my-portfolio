@@ -9,7 +9,7 @@ const profile = {
   stats: [
     { label: 'Years in Data/Analytics', value: '3+' },
     { label: 'Data products shipped', value: '12+' },
-    { label: 'Datasets modeled', value: '50+' }
+    { label: 'Datasets modeled', value: '100+' }
   ]
 };
 
