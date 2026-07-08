@@ -172,7 +172,7 @@ a {
 :root[data-theme='light'] .panel-card ul,
 :root[data-theme='light'] .timeline-item p,
 :root[data-theme='light'] .timeline-item span,
-:root[data-theme='light'] .testimonial-card span {
+:root[data-theme='light'] .certification-card p.issuer {
   color: #6b7280;
 }
 
@@ -225,16 +225,28 @@ a {
 }
 
 :root[data-theme='light'] .project-card,
-:root[data-theme='light'] .testimonial-card {
+:root[data-theme='light'] .certification-card {
   background: #ffffff;
   border-color: #d1fae5;
   box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
 }
 
 :root[data-theme='light'] .project-card:hover,
-:root[data-theme='light'] .testimonial-card:hover {
+:root[data-theme='light'] .certification-card:hover {
   border-color: #a7f3d0;
   box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+}
+
+:root[data-theme='light'] .certification-icon {
+  color: #059669;
+}
+
+:root[data-theme='light'] .verify-link {
+  color: #059669;
+}
+
+:root[data-theme='light'] .verify-link:hover {
+  color: #047857;
 }
 
 :root[data-theme='light'] .project-type {
@@ -453,7 +465,8 @@ a {
 }
 
 .project-grid,
-.testimonial-grid {
+.project-grid,
+.certification-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
@@ -461,18 +474,74 @@ a {
 }
 
 .project-card,
-.testimonial-card {
+.certification-card {
   padding: 20px;
   border-radius: 20px;
   background: rgba(255,255,255,0.05);
   border: 1px solid rgba(255,255,255,0.06);
   transition: transform 180ms ease, border-color 180ms ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-card:hover,
-.testimonial-card:hover {
+.certification-card:hover {
   transform: translateY(-4px);
   border-color: rgba(104, 224, 255, 0.4);
+}
+
+.certification-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.certification-header h4 {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.certification-icon {
+  color: #68e0ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.certification-card p.issuer {
+  color: #aeb8d8;
+  font-size: 0.88rem;
+  margin: 0 0 16px 0;
+  line-height: 1.4;
+}
+
+.verify-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #68e0ff;
+  font-size: 0.88rem;
+  font-weight: 500;
+  transition: color 150ms ease;
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+.verify-link:hover {
+  color: #8be7ff;
+}
+
+.verify-link svg {
+  transition: transform 150ms ease;
+}
+
+.verify-link:hover svg {
+  transform: translate(1px, -1px);
 }
 
 .project-type {
@@ -548,7 +617,7 @@ a {
 @media (max-width: 900px) {
   .content-grid,
   .project-grid,
-  .testimonial-grid {
+  .certification-grid {
     grid-template-columns: 1fr;
   }
 

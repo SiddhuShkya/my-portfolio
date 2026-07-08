@@ -43,20 +43,28 @@ const experience = [
   { title: 'Graduate Teaching Assistant ', period: '2024 — 2025', company: 'Herald College Kathmandu, Nepal' }
 ];
 
-const testimonials = [
+const certifications = [
   {
-    quote: 'Siddhartha turned our messy data into a reliable prediction service that became central to our operations.',
-    author: 'Neha Patel',
-    role: 'Head of Analytics, InsightFlow'
+    title: 'Google Cloud Professional Data Engineer',
+    issuer: 'Google Cloud',
+    date: '2026',
+    link: 'https://www.credential.net/'
   },
   {
-    quote: 'His API-first approach made integration seamless and accelerated the deployment of our analytics products.',
-    author: 'Rohan Mehta',
-    role: 'Product Lead, Data Nexus'
+    title: 'dbt Fundamentals',
+    issuer: 'dbt Labs',
+    date: '2025',
+    link: 'https://credentials.dbtlabs.com/'
+  },
+  {
+    title: 'Associate Certified Developer',
+    issuer: 'AWS',
+    date: '2025',
+    link: 'https://aws.amazon.com/verification'
   }
 ];
 
-const skills = ['Python', 'SQL', 'FastAPI', 'Pandas', 'Matplotlib', 'Seaborn', 'Scikit-Learn', 'PyTorch', 'NLTK', 'Spark', 'Airflow', 'dbt', 'Docker', 'GCP', 'MLOPs', 'Prompt Engineering'];
+const skills = ['Python', 'SQL', 'FastAPI', 'Pandas', 'Matplotlib', 'Seaborn', 'Scikit-Learn', 'PyTorch', 'NLTK', 'ETL & ELT', 'Spark', 'Airflow', 'dbt', 'Docker', 'GCP', 'MLOPs', 'Prompt Engineering'];
 
 function App() {
   const [theme, setTheme] = useState('dark');
@@ -186,7 +194,7 @@ function App() {
       <section className="section-card skills-section">
         <div className="section-heading">
           <p className="eyebrow">Toolkit</p>
-          <h3>Focused on the stack that makes products shine.</h3>
+          <h3>From data pipelines to production models</h3>
         </div>
         <div className="chip-row">
           {skills.map((skill) => (
@@ -195,17 +203,33 @@ function App() {
         </div>
       </section>
 
-      <section className="section-card testimonial-section">
+      <section className="section-card certifications-section">
         <div className="section-heading">
-          <p className="eyebrow">Recommendations</p>
-          <h3>What colleagues say about working with me.</h3>
+          <p className="eyebrow">Certifications</p>
+          <h3>Verified industry credentials and specializations.</h3>
         </div>
-        <div className="testimonial-grid">
-          {testimonials.map((item) => (
-            <article key={item.author} className="testimonial-card">
-              <p>“{item.quote}”</p>
-              <strong>{item.author}</strong>
-              <span>{item.role}</span>
+        <div className="certification-grid">
+          {certifications.map((item) => (
+            <article key={item.title} className="certification-card">
+              <div className="certification-header">
+                <div className="certification-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                  </svg>
+                </div>
+                <h4>{item.title}</h4>
+              </div>
+              <p className="issuer">{item.issuer} • {item.date}</p>
+              {item.link && (
+                <a href={item.link} target="_blank" rel="noopener noreferrer" className="verify-link">
+                  Verify Credential
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
+                </a>
+              )}
             </article>
           ))}
         </div>
@@ -213,7 +237,7 @@ function App() {
       <footer className="footer-card" id="contact">
         <p className="eyebrow">Get in touch</p>
         <div className="footer-contact-primary" style={{ margin: '1.5rem 0' }}>
-          <a href="mailto:siddhuushakyaa@gmail.com" className="contact-link-large" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.75rem', textDecoration: 'none', color: 'inherit', fontSize: '1.5rem', fontWeight: 'bold' }}>
+          <a href="mailto:siddhuushakyaa@gmail.com" className="contact-link-large" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.3rem', textDecoration: 'none', color: 'inherit', fontSize: '1.2rem', fontWeight: 'bold' }}>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
               <polyline points="22,6 12,13 2,6" />
