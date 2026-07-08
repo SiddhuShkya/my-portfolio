@@ -2,38 +2,38 @@ import { useEffect, useState } from 'react';
 
 const profile = {
   name: 'Siddhartha Shakya',
-  role: 'AI/ML Engineer • Data Scientist • Backend Architect',
+  role: 'Data Analyst & Engineering • AI/ML Enthusiast',
   location: 'Dubai, UAE',
   summary:
-    'I build production-ready AI systems with Python, SQL, and FastAPI, turning data into scalable insights and automated workflows.',
+    'Data specialist in Dubai with 3+ years of experience modeling 100+ datasets. I build production-ready AI systems and scalable data engineering pipelines with Python, SQL, and FastAPI to ship impactful data products.',
   stats: [
-    { label: 'Years in AI/ML', value: '6+' },
-    { label: 'Data products shipped', value: '17' },
-    { label: 'Datasets modeled', value: '580+' }
+    { label: 'Years in Data/Analytics', value: '3+' },
+    { label: 'Data products shipped', value: '12+' },
+    { label: 'Datasets modeled', value: '50+' }
   ]
 };
 
 const highlights = [
-  'Python-driven model development and deployment',
-  'End-to-end ML pipelines with FastAPI and cloud data stores',
-  'SQL analytics, feature engineering, and real-time inference'
+  'Python-driven Model & App development with Automated deployment',
+  'End-to-end Data Pipelines with Airflow, DBT & Snowflake',
+  'Advanced SQL modeling & Feature Engineering with Production workflows'
 ];
 
 const projects = [
   {
-    title: 'Predictive Talent Engine',
-    type: 'ML system for recruitment',
-    description: 'Built a FastAPI service that scores candidate fit using structured HR data and production-grade feature pipelines.'
+    title: 'EduFin Loan Portfolio Risk Investigation',
+    type: 'Data Analytics / BI Project',
+    description: 'A Databricks-based analysis of an education loan portfolio to uncover default patterns, identify high-risk regions and customers, evaluate partner institutions, and support data-driven risk mitigation decisions.'
   },
   {
-    title: 'Sales Forecast Platform',
-    type: 'Demand forecasting solution',
-    description: 'Developed Python models and SQL ETL to predict weekly revenue for a retail chain across 120 stores.'
+    title: 'NYC Parking Violations Pipeline',
+    type: 'Data Engineering Project',
+    description: 'A dbt-based project that builds end-to-end data pipelines for NYC parking violation data using the medallion architecture to transform raw data into curated, analytics-ready layers.'
   },
   {
-    title: 'Customer Insights API',
-    type: 'Real-time analytics service',
-    description: 'Delivered a FastAPI-backed data platform to serve personalized recommendations and segmentation data to marketing teams.'
+    title: 'Text Summarization with HuggingFace',
+    type: 'End-to-end NLP/ML project',
+    description: 'A Python-based text summarization application that fine-tunes a Hugging Face T5 model and serves it through a FastAPI web interface for generating concise summaries.'
   }
 ];
 
@@ -113,6 +113,14 @@ function App() {
 
           <div className="hero-actions">
             <a className="button primary" href="#contact">Book a call</a>
+            <a className="button cv-download" href="/cv.pdf" download="Siddhartha_Shakya_CV.pdf">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+              Download CV
+            </a>
             <a className="button secondary" href="#work">View projects</a>
           </div>
 
@@ -128,9 +136,9 @@ function App() {
 
         <aside className="panel-card" id="about">
           <p className="eyebrow">Profile</p>
-          <h3>Designing purposeful products that feel effortless.</h3>
+          <h3>Building scalable AI systems that turn data into impact.</h3>
           <p>
-            I blend strategy, visual craft, and a practical coding lens to turn product ideas into experiences people remember.
+            I blend data engineering, model development, and a practical coding lens to turn complex datasets into production-ready workflows and automated insights.
           </p>
           <ul>
             {highlights.map((item) => (
@@ -205,9 +213,69 @@ function App() {
 
       <footer className="footer-card" id="contact">
         <p className="eyebrow">Let’s build something refined</p>
-        <h3>hello@siddharthashakya.ai</h3>z
+
+        <div className="footer-contact-primary" style={{ margin: '1.5rem 0' }}>
+          <a href="mailto:siddhuushakyaa@gmail.com" className="contact-link-large" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.75rem', textDecoration: 'none', color: 'inherit', fontSize: '1.5rem', fontWeight: 'bold' }}>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+            <span>siddhuushakyaa@gmail.com</span>
+          </a>
+        </div>
+
         <p>{profile.location} • Open to remote and hybrid collaborations</p>
+
+        <div className="footer-links" style={{ display: 'flex', gap: '1.5rem', marginTop: '1.5rem', alignItems: 'center' }}>
+          <a href="tel:+971500000000" className="contact-link" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none', color: 'inherit' }}>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+            <span>+971 50 000 0000</span>
+          </a>
+
+          <a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener noreferrer" className="contact-link" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none', color: 'inherit' }}>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+              <rect x="2" y="9" width="4" height="12" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+            <span>LinkedIn</span>
+          </a>
+
+          <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" className="contact-link" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none', color: 'inherit' }}>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+            </svg>
+            <span>GitHub</span>
+          </a>
+        </div>
       </footer>
+
+      <div className="footer-links" style={{ display: 'flex', gap: '1.5rem', marginTop: '1.5rem', alignItems: 'center' }}>
+        <a href="tel:+971551830660" className="contact-link" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none', color: 'inherit' }}>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+          </svg>
+          <span>+971 55 183 0660</span>
+        </a>
+
+        <a href="https://linkedin.com/in/sidShkya" target="_blank" rel="noopener noreferrer" className="contact-link" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none', color: 'inherit' }}>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+            <rect x="2" y="9" width="4" height="12" />
+            <circle cx="4" cy="4" r="2" />
+          </svg>
+          <span>LinkedIn</span>
+        </a>
+
+        <a href="https://github.com/SiddhuShkya" target="_blank" rel="noopener noreferrer" className="contact-link" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none', color: 'inherit' }}>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+          </svg>
+          <span>GitHub</span>
+        </a>
+      </div>
     </div>
   );
 }

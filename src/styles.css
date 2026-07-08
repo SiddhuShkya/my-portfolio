@@ -193,6 +193,18 @@ a {
   color: #047857;
 }
 
+:root[data-theme='light'] .button.cv-download {
+  background: rgba(16, 185, 129, 0.06);
+  border-color: rgba(16, 185, 129, 0.3);
+  color: #059669;
+}
+
+:root[data-theme='light'] .button.cv-download:hover {
+  background: rgba(16, 185, 129, 0.14);
+  border-color: rgba(16, 185, 129, 0.5);
+  box-shadow: 0 0 18px rgba(16, 185, 129, 0.15);
+}
+
 :root[data-theme='light'] .chip {
   background: rgba(236, 253, 245, 0.9);
   color: #064e3b;
@@ -364,6 +376,23 @@ a {
 
 .button.secondary {
   background: rgba(255,255,255,0.06);
+}
+
+.button.cv-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(104, 224, 255, 0.3);
+  color: #68e0ff;
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+
+.button.cv-download:hover {
+  background: rgba(104, 224, 255, 0.1);
+  border-color: rgba(104, 224, 255, 0.55);
+  box-shadow: 0 0 18px rgba(104, 224, 255, 0.15);
 }
 
 .stats-row {
