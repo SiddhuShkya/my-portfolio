@@ -45,22 +45,22 @@ const experience = [
 
 const certifications = [
   {
-    title: 'Google Cloud Professional Data Engineer',
-    issuer: 'Google Cloud',
+    title: 'MLOps Bootcamp',
+    issuer: 'Udemy',
     date: '2026',
-    link: 'https://www.credential.net/'
+    link: 'https://www.udemy.com/certificate/UC-864e71bf-b3fd-4c82-a31d-8db799454870/'
   },
   {
-    title: 'dbt Fundamentals',
-    issuer: 'dbt Labs',
+    title: 'SQL Bootcamp',
+    issuer: 'Udemy',
     date: '2025',
-    link: 'https://credentials.dbtlabs.com/'
+    link: 'https://www.udemy.com/certificate/UC-5aa96a48-14df-4219-868c-68d9ea1658c2/'
   },
   {
-    title: 'Associate Certified Developer',
-    issuer: 'AWS',
-    date: '2025',
-    link: 'https://aws.amazon.com/verification'
+    title: 'PySpark: Building Data Pipelines',
+    issuer: 'LinkedIn Learning',
+    date: '2026',
+    link: 'https://www.linkedin.com/learning/certificates/03e6ce0ad415bdd624d323ad07e36d448bd9f84c6830d566b19917b2301aa11b?trk=share_certificate'
   }
 ];
 
