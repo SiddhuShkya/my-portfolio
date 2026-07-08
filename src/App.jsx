@@ -205,7 +205,7 @@ function App() {
 
       <footer className="footer-card" id="contact">
         <p className="eyebrow">Let’s build something refined</p>
-        <h3>hello@siddharthashakya.ai</h3>
+        <h3>hello@siddharthashakya.ai</h3>z
         <p>{profile.location} • Open to remote and hybrid collaborations</p>
       </footer>
     </div>

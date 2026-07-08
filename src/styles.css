@@ -113,7 +113,7 @@ a {
   transition: background 180ms ease, color 180ms ease, border-color 180ms ease;
 }
 
-..theme-toggle:hover,
+.theme-toggle:hover,
 .theme-toggle:focus-visible {
   background: rgba(255, 255, 255, 0.12);
   outline: none;
@@ -194,15 +194,15 @@ a {
 }
 
 :root[data-theme='light'] .chip {
-  background: rgba(16, 185, 129, 0.12);
-  color: #065f46;
+  background: rgba(236, 253, 245, 0.9);
+  color: #064e3b;
   border-color: rgba(16, 185, 129, 0.24);
   font-weight: 600;
 }
 
 :root[data-theme='light'] .chip:hover {
-  background: rgba(16, 185, 129, 0.18);
-  border-color: rgba(16, 185, 129, 0.36);
+  background: rgba(236, 253, 245, 1);
+  border-color: rgba(16, 185, 129, 0.4);
 }
 
 :root[data-theme='light'] .topbar {
@@ -458,6 +458,24 @@ a {
   gap: 12px;
   flex-wrap: wrap;
   margin-top: 14px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.06);
+  color: #cfd7ee;
+  padding: 8px 14px;
+  font-size: 0.88rem;
+  transition: background 180ms ease, color 180ms ease, border-color 180ms ease, transform 180ms ease;
+}
+
+.chip:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(104, 224, 255, 0.35);
+  transform: translateY(-1px);
 }
 
 .timeline-list {
