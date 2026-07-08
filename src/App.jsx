@@ -38,9 +38,9 @@ const projects = [
 ];
 
 const experience = [
-  { title: 'Senior AI/ML Engineer', period: '2023 — Present', company: 'Data Nexus Labs' },
-  { title: 'Data Scientist', period: '2020 — 2023', company: 'InsightFlow Analytics' },
-  { title: 'Machine Learning Engineer', period: '2018 — 2020', company: 'Apex Data Systems' }
+  { title: 'Backend AI Engineer', period: '2026 — Present', company: 'FlyRank AI, UAE' },
+  { title: 'Data Engineer', period: '2025 — 2026', company: 'Mach24 Orbitals, Nepal' },
+  { title: 'Graduate Teaching Assistant ', period: '2024 — 2025', company: 'Herald College Kathmandu, Nepal' }
 ];
 
 const testimonials = [
@@ -106,13 +106,13 @@ function App() {
 
       <main className="content-grid">
         <section className="hero-card">
-          <p className="eyebrow">Available for select collaborations</p>
+          <p className="eyebrow">Open to new opportunities</p>
           <h1>{profile.name}</h1>
           <h2>{profile.role}</h2>
           <p className="summary">{profile.summary}</p>
 
           <div className="hero-actions">
-            <a className="button primary" href="#contact">Book a call</a>
+            <a className="button primary" href="#contact">Contact Me</a>
             <a className="button cv-download" href="https://raw.githubusercontent.com/SiddhuShkya/autoCV/build/cv.pdf" target="_blank" rel="noopener noreferrer">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
@@ -197,8 +197,8 @@ function App() {
 
       <section className="section-card testimonial-section">
         <div className="section-heading">
-          <p className="eyebrow">Voices from collaborators</p>
-          <h3>What it feels like to work together.</h3>
+          <p className="eyebrow">Recommendations</p>
+          <h3>What colleagues say about working with me.</h3>
         </div>
         <div className="testimonial-grid">
           {testimonials.map((item) => (
@@ -212,7 +212,7 @@ function App() {
       </section>
 
       <footer className="footer-card" id="contact">
-        <p className="eyebrow">Let’s build something refined</p>
+        <p className="eyebrow">Get in touch</p>
 
         <div className="footer-contact-primary" style={{ margin: '1.5rem 0' }}>
           <a href="mailto:siddhuushakyaa@gmail.com" className="contact-link-large" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.75rem', textDecoration: 'none', color: 'inherit', fontSize: '1.5rem', fontWeight: 'bold' }}>
@@ -224,7 +224,7 @@ function App() {
           </a>
         </div>
 
-        <p>{profile.location} • Open to remote and hybrid collaborations</p>
+        <p>{profile.location} • Open to full-time, remote &amp; hybrid roles</p>
 
         <div className="footer-links" style={{ display: 'flex', gap: '1.5rem', marginTop: '1.5rem', alignItems: 'center' }}>
           <a href="tel:+971551830660" className="contact-link" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none', color: 'inherit' }}>
