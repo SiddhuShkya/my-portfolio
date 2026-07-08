@@ -113,7 +113,7 @@ function App() {
 
           <div className="hero-actions">
             <a className="button primary" href="#contact">Book a call</a>
-            <a className="button cv-download" href="/cv.pdf" download="Siddhartha_Shakya_CV.pdf">
+            <a className="button cv-download" href="https://raw.githubusercontent.com/SiddhuShkya/autoCV/build/cv.pdf" target="_blank" rel="noopener noreferrer" download="Siddhartha_Shakya_CV.pdf">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
                 <polyline points="7 10 12 15 17 10" />
