@@ -8,6 +8,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 * {
   box-sizing: border-box;
 }
@@ -90,9 +91,36 @@ a {
 
 .nav-links {
   display: flex;
+  align-items: center;
   gap: 18px;
   color: #b7c0d9;
 }
+
+.nav-links a,
+.nav-links .theme-toggle {
+  display: inline-flex;
+  align-items: center;
+}
+
+.theme-toggle {
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.06);
+  color: #cfd7ee;
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-size: 0.88rem;
+  transition: background 180ms ease, color 180ms ease, border-color 180ms ease;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus-visible {
+  background: rgba(255, 255, 255, 0.12);
+  outline: none;
+  border-color: rgba(104, 224, 255, 0.35);
+}
+
+/* (light mode toggle styles defined above) */
 
 .content-grid {
   max-width: 1180px;
@@ -287,6 +315,195 @@ a {
 
 .timeline-item h4 {
   margin: 0 0 4px;
+}
+
+/* ─── LIGHT MODE THEME ─────────────────────────────────────────────── */
+:root[data-theme='light'] {
+  color: #1a1535;
+  background: #f0eeff;
+}
+
+:root[data-theme='light'] body {
+  background: linear-gradient(
+    135deg,
+    #ece9ff 0%,
+    #f5f0ff 25%,
+    #fffaf4 60%,
+    #f0f5ff 100%
+  );
+}
+
+/* Cards in light mode — warm white with soft violet tint */
+:root[data-theme='light'] .topbar,
+:root[data-theme='light'] .hero-card,
+:root[data-theme='light'] .panel-card,
+:root[data-theme='light'] .section-card,
+:root[data-theme='light'] .footer-card {
+  background: rgba(255, 252, 255, 0.82);
+  border-color: rgba(110, 80, 220, 0.12);
+  box-shadow:
+    0 4px 24px rgba(100, 60, 200, 0.08),
+    0 1px 0 rgba(255, 255, 255, 0.9) inset;
+}
+
+/* Eyebrow accent — rich violet */
+:root[data-theme='light'] .eyebrow {
+  color: #7c3aed;
+}
+
+/* Hero heading */
+:root[data-theme='light'] .hero-card h1 {
+  background: linear-gradient(135deg, #4f1fb5 0%, #7c3aed 50%, #2563eb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Subheadings */
+:root[data-theme='light'] .hero-card h2 {
+  color: #6d5a9c;
+}
+
+/* Body / muted text */
+:root[data-theme='light'] .nav-links,
+:root[data-theme='light'] .summary,
+:root[data-theme='light'] .panel-card p,
+:root[data-theme='light'] .project-card p,
+:root[data-theme='light'] .footer-card p,
+:root[data-theme='light'] .panel-card ul,
+:root[data-theme='light'] .timeline-item p,
+:root[data-theme='light'] .timeline-item span,
+:root[data-theme='light'] .testimonial-card span {
+  color: #52487a;
+}
+
+/* Primary CTA — vivid violet-to-blue gradient */
+:root[data-theme='light'] .button.primary {
+  background: linear-gradient(135deg, #7c3aed, #2563eb);
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 4px 20px rgba(124, 58, 237, 0.35);
+}
+
+:root[data-theme='light'] .button.primary:hover {
+  box-shadow: 0 6px 28px rgba(124, 58, 237, 0.5);
+}
+
+/* Secondary CTA */
+:root[data-theme='light'] .button.secondary {
+  background: rgba(100, 60, 200, 0.08);
+  border-color: rgba(100, 60, 200, 0.2);
+  color: #4f1fb5;
+}
+
+/* Skill chips — vivid violet tint */
+:root[data-theme='light'] .chip {
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(37, 99, 235, 0.08));
+  color: #4f1fb5;
+  border-color: rgba(124, 58, 237, 0.25);
+  font-weight: 500;
+}
+
+:root[data-theme='light'] .chip:hover {
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.18), rgba(37, 99, 235, 0.14));
+  border-color: rgba(124, 58, 237, 0.45);
+}
+
+/* Topbar */
+:root[data-theme='light'] .topbar {
+  color: #1a1535;
+  background: rgba(255, 252, 255, 0.88);
+  border-color: rgba(110, 80, 220, 0.14);
+  backdrop-filter: blur(24px);
+}
+
+/* Project & testimonial inner cards */
+:root[data-theme='light'] .project-card,
+:root[data-theme='light'] .testimonial-card {
+  background: linear-gradient(145deg, rgba(246, 242, 255, 0.85), rgba(238, 245, 255, 0.7));
+  border-color: rgba(110, 80, 220, 0.14);
+  box-shadow: 0 2px 12px rgba(100, 60, 200, 0.06);
+}
+
+:root[data-theme='light'] .project-card:hover,
+:root[data-theme='light'] .testimonial-card:hover {
+  border-color: rgba(124, 58, 237, 0.4);
+  box-shadow: 0 8px 32px rgba(100, 60, 200, 0.14);
+}
+
+/* Project type label */
+:root[data-theme='light'] .project-type {
+  color: #7c3aed;
+}
+
+/* Stat cards */
+:root[data-theme='light'] .stat-card {
+  background: linear-gradient(145deg, rgba(124, 58, 237, 0.08), rgba(37, 99, 235, 0.05));
+  border: 1px solid rgba(124, 58, 237, 0.14);
+}
+
+:root[data-theme='light'] .stat-card strong {
+  color: #4f1fb5;
+}
+
+:root[data-theme='light'] .stat-card span {
+  color: #6d5a9c;
+}
+
+/* Timeline */
+:root[data-theme='light'] .timeline-item {
+  border-color: rgba(110, 80, 220, 0.12);
+}
+
+/* Orbs — more vivid for light mode */
+:root[data-theme='light'] .background-orb {
+  opacity: 0.22;
+}
+
+:root[data-theme='light'] .orb-one {
+  background: #a78bfa;
+}
+
+:root[data-theme='light'] .orb-two {
+  background: #60a5fa;
+}
+
+:root[data-theme='light'] .page-shell {
+  background: transparent;
+}
+
+/* Theme toggle button */
+:root[data-theme='light'] .theme-toggle {
+  color: #4f1fb5;
+  border-color: rgba(124, 58, 237, 0.22);
+  background: rgba(124, 58, 237, 0.06);
+}
+
+:root[data-theme='light'] .theme-toggle:hover {
+  background: rgba(124, 58, 237, 0.12);
+  border-color: rgba(124, 58, 237, 0.4);
+}
+
+/* Nav links */
+:root[data-theme='light'] .nav-links a {
+  color: #52487a;
+  transition: color 160ms ease;
+}
+
+:root[data-theme='light'] .nav-links a:hover {
+  color: #7c3aed;
+}
+
+/* Section headings */
+:root[data-theme='light'] .section-card h3,
+:root[data-theme='light'] .panel-card h3,
+:root[data-theme='light'] .footer-card h3 {
+  color: #1a1535;
+}
+
+/* Timeline headings */
+:root[data-theme='light'] .timeline-item h4 {
+  color: #1a1535;
 }
 
 .timeline-item p,

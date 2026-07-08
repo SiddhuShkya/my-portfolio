@@ -1,3 +1,5 @@
+import { useEffect, useState } from 'react';
+
 const profile = {
   name: 'Siddhartha Shakya',
   role: 'AI/ML Engineer • Data Scientist • Backend Architect',
@@ -57,6 +59,29 @@ const testimonials = [
 const skills = ['Python', 'SQL', 'FastAPI', 'Pandas', 'scikit-learn', 'Docker', 'AWS'];
 
 function App() {
+  const [theme, setTheme] = useState('dark');
+
+  useEffect(() => {
+    const saved = localStorage.getItem('theme');
+    if (saved === 'light' || saved === 'dark') {
+      setTheme(saved);
+      return;
+    }
+
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    setTheme(prefersDark ? 'dark' : 'light');
+  }, []);
+
+  useEffect(() => {
+    document.documentElement.dataset.theme = theme;
+    localStorage.setItem('theme', theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme((current) => (current === 'dark' ? 'light' : 'dark'));
+  };
+
+  const themeLabel = theme === 'dark' ? 'Light Mode' : 'Dark Mode';
   return (
     <div className="page-shell">
       <div className="background-orb orb-one" />
@@ -68,6 +93,14 @@ function App() {
           <a href="#about">About</a>
           <a href="#work">Work</a>
           <a href="#contact">Contact</a>
+          <button
+            type="button"
+            className="theme-toggle"
+            onClick={toggleTheme}
+            aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
+          >
+            {themeLabel}
+          </button>
         </nav>
       </header>
 
