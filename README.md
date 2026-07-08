@@ -1,6 +1,8 @@
-# React Portfolio Theme
+# React Portfolio 
 
 This project is a React + Vite portfolio website inspired by the dark, polished, futuristic look of the provided HTML portfolio. It now includes a more personal profile story, richer motion, and a deployment-ready setup for GitHub Pages.
+
+> Portfolio: [Link](https://siddhushkya.github.io/my-portfolio/)
 
 ## Features
 - Modern glassmorphism-inspired UI
