@@ -122,7 +122,7 @@ function App() {
           <div className="hero-layout">
             <img
               className="hero-photo"
-              src="https://github.com/SiddhuShkya/my-portfolio/blob/main/public/my-photo.png?raw=true"
+              src={`${import.meta.env.BASE_URL}my-photo.png`}
               alt="Siddhartha Shakya"
             />
             <div className="hero-copy">
