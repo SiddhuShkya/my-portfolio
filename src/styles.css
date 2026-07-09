@@ -551,6 +551,32 @@ a {
   color: #68e0ff;
 }
 
+.project-stack {
+  margin-top: auto;
+  padding-top: 16px;
+}
+
+.project-stack-label {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #8be7ff;
+  margin-bottom: 8px;
+}
+
+.project-stack-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.project-chip {
+  padding: 6px 10px;
+  font-size: 0.76rem;
+}
+
 .chip-row {
   display: flex;
   gap: 12px;

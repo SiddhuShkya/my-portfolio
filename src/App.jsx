@@ -23,17 +23,20 @@ const projects = [
   {
     title: 'EduFin Loan Portfolio Risk Investigation',
     type: 'Data Analytics / BI Project',
-    description: 'A Databricks-based analysis of an education loan portfolio to uncover default patterns, identify high-risk regions and customers, evaluate partner institutions, and support data-driven risk mitigation decisions.'
+    description: 'A Databricks-based analysis of an education loan portfolio to uncover default patterns, identify high-risk regions and customers, evaluate partner institutions, and support data-driven risk mitigation decisions.',
+    techStack: ['Databricks', 'PySpark', 'SQL', 'Python', 'Matplotlib', 'Seaborn']
   },
   {
     title: 'NYC Parking Violations Pipeline',
     type: 'Data Engineering Project',
-    description: 'A dbt-based project that builds end-to-end data pipelines for NYC parking violation data using the medallion architecture to transform raw data into curated, analytics-ready layers.'
+    description: 'A dbt-based project that builds end-to-end data pipelines for NYC parking violation data using the medallion architecture to transform raw data into curated, analytics-ready layers.',
+    techStack: ['dbt', 'SQL', 'Python', 'DuckDB']
   },
   {
     title: 'Text Summarization with HuggingFace',
     type: 'End-to-end NLP/ML project',
-    description: 'A Python-based text summarization application that fine-tunes a Hugging Face T5 model and serves it through a FastAPI web interface for generating concise summaries.'
+    description: 'A Python-based text summarization application that fine-tunes a Hugging Face T5 model and serves it through a FastAPI web interface for generating concise summaries.',
+    techStack: ['Python', 'FastAPI', 'Hugging Face', 'Transformers']
   }
 ];
 
@@ -186,6 +189,14 @@ function App() {
               <p className="project-type">{project.type}</p>
               <h4>{project.title}</h4>
               <p>{project.description}</p>
+              <div className="project-stack">
+                <span className="project-stack-label">Tech stack</span>
+                <div className="project-stack-list">
+                  {project.techStack.map((item) => (
+                    <span key={item} className="chip project-chip">{item}</span>
+                  ))}
+                </div>
+              </div>
             </article>
           ))}
         </div>
