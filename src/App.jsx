@@ -24,19 +24,19 @@ const projects = [
     title: 'EduFin Loan Portfolio Risk Investigation',
     type: 'Data Analytics / BI Project',
     description: 'A Databricks-based analysis of an education loan portfolio to uncover default patterns, identify high-risk regions and customers, evaluate partner institutions, and support data-driven risk mitigation decisions.',
-    techStack: ['Databricks', 'PySpark', 'SQL', 'Python', 'Matplotlib', 'Seaborn']
+    techStack: ['Claude', 'Databricks', 'PySpark', 'SQL', 'Python', 'Matplotlib', 'Seaborn']
   },
   {
     title: 'NYC Parking Violations Pipeline',
     type: 'Data Engineering Project',
     description: 'A dbt-based project that builds end-to-end data pipelines for NYC parking violation data using the medallion architecture to transform raw data into curated, analytics-ready layers.',
-    techStack: ['dbt', 'SQL', 'Python', 'DuckDB']
+    techStack: ['Claude', 'dbt', 'SQL', 'Python', 'DuckDB']
   },
   {
     title: 'Text Summarization with HuggingFace',
     type: 'End-to-end NLP/ML project',
     description: 'A Python-based text summarization application that fine-tunes a Hugging Face T5 model and serves it through a FastAPI web interface for generating concise summaries.',
-    techStack: ['Python', 'FastAPI', 'Hugging Face', 'Transformers']
+    techStack: ['Claude', 'Python', 'FastAPI', 'Hugging Face', 'Transformers']
   }
 ];
 
@@ -67,7 +67,9 @@ const certifications = [
   }
 ];
 
-const skills = ['Python', 'SQL', 'FastAPI', 'Pandas', 'Matplotlib', 'Seaborn', 'Scikit-Learn', 'PyTorch', 'NLTK', 'ETL & ELT', 'Spark', 'Airflow', 'dbt', 'Docker', 'GCP', 'MLOPs', 'Prompt Engineering'];
+const skills = ['Claude', 'Python', 'SQL', 'FastAPI', 'Pandas', 'Matplotlib', 'Seaborn', 'Scikit-Learn', 'PyTorch', 'NLTK', 'ETL & ELT', 'Spark', 'Airflow', 'dbt', 'Docker', 'GCP', 'MLOPs', 'Prompt Engineering'];
+
+const cvViewerUrl = 'https://docs.google.com/viewer?embedded=true&url=https://raw.githubusercontent.com/SiddhuShkya/autoCV/build/cv.pdf';
 
 function App() {
   const [theme, setTheme] = useState('dark');
@@ -124,13 +126,13 @@ function App() {
 
           <div className="hero-actions">
             <a className="button primary" href="#contact">Contact Me</a>
-            <a className="button cv-download" href="https://raw.githubusercontent.com/SiddhuShkya/autoCV/build/cv.pdf" target="_blank" rel="noopener noreferrer">
+            <a className="button cv-download" href={cvViewerUrl} target="_blank" rel="noopener noreferrer">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
                 <polyline points="7 10 12 15 17 10" />
                 <line x1="12" y1="15" x2="12" y2="3" />
               </svg>
-              Download CV
+              Open CV
             </a>
             <a className="button secondary" href="#work">View projects</a>
           </div>
