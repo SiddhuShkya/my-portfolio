@@ -8,7 +8,7 @@ const profile = {
     'Data specialist in Dubai with 3+ years of experience modeling 100+ datasets. I build production-ready AI systems and scalable data engineering pipelines with Python, SQL, and FastAPI to ship impactful data products.',
   stats: [
     { label: 'Years in Data/Analytics', value: '3+' },
-    { label: 'Data products shipped', value: '12+' },
+    { label: 'Data products shipped', value: '18+' },
     { label: 'Datasets modeled', value: '100+' }
   ]
 };
@@ -24,7 +24,7 @@ const projects = [
     title: 'EduFin Loan Portfolio Risk Investigation',
     type: 'Data Analytics / BI Project',
     description: 'A Databricks-based analysis of an education loan portfolio to uncover default patterns, identify high-risk regions and customers, evaluate partner institutions, and support data-driven risk mitigation decisions.',
-    techStack: ['Claude', 'Databricks', 'PySpark', 'SQL', 'Python', 'Matplotlib', 'Seaborn']
+    techStack: ['Claude', 'Databricks', 'PySpark', 'SQL', 'Python', 'Matplotlib']
   },
   {
     title: 'NYC Parking Violations Pipeline',
