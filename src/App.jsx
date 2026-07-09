@@ -7,7 +7,7 @@ const profile = {
   summary:
     'Data specialist in Dubai with 3+ years of experience modeling 100+ datasets. I build production-ready AI systems and scalable data engineering pipelines with Python, SQL, and FastAPI to ship impactful data products.',
   stats: [
-    { label: 'Years in Data/Analytics', value: '3+' },
+    { label: 'Years in Data Engineering & Analytics', value: '3+' },
     { label: 'Data products shipped', value: '18+' },
     { label: 'Datasets modeled', value: '100+' }
   ]
@@ -119,10 +119,19 @@ function App() {
 
       <main className="content-grid">
         <section className="hero-card">
-          <p className="eyebrow">Open to new opportunities</p>
-          <h1>{profile.name}</h1>
-          <h2>{profile.role}</h2>
-          <p className="summary">{profile.summary}</p>
+          <div className="hero-layout">
+            <img
+              className="hero-photo"
+              src="./public/my-photo.png"
+              alt="Siddhartha Shakya"
+            />
+            <div className="hero-copy">
+              <p className="eyebrow">Open to new opportunities</p>
+              <h1>{profile.name}</h1>
+              <h2>{profile.role}</h2>
+              <p className="summary">{profile.summary}</p>
+            </div>
+          </div>
 
           <div className="hero-actions">
             <a className="button primary" href="#contact">Contact Me</a>
