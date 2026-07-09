@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Sun, Moon } from 'lucide-react';
 
 const profile = {
   name: 'Siddhartha Shakya',
@@ -112,6 +113,7 @@ function App() {
             onClick={toggleTheme}
             aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
           >
+            {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
             {themeLabel}
           </button>
         </nav>
