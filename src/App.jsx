@@ -49,6 +49,12 @@ const experience = [
 
 const certifications = [
   {
+    title: 'AI Fluency: Framework & Foundations',
+    issuer: 'Anthropic',
+    date: '2026',
+    link: 'https://verify.skilljar.com/c/azo7p3jpj66r'
+  },
+  {
     title: 'MLOps Bootcamp',
     issuer: 'Udemy',
     date: '2026',
@@ -59,12 +65,6 @@ const certifications = [
     issuer: 'Udemy',
     date: '2025',
     link: 'https://www.udemy.com/certificate/UC-5aa96a48-14df-4219-868c-68d9ea1658c2/'
-  },
-  {
-    title: 'PySpark: Building Data Pipelines',
-    issuer: 'LinkedIn Learning',
-    date: '2026',
-    link: 'https://www.linkedin.com/learning/certificates/03e6ce0ad415bdd624d323ad07e36d448bd9f84c6830d566b19917b2301aa11b?trk=share_certificate'
   }
 ];
 
@@ -138,17 +138,17 @@ function App() {
           <div className="hero-actions">
             <a className="button primary" href="#contact">Contact Me</a>
             <a className="button cv-download"
-                href={cvDownloadUrl}
-                download="Siddhu_Shkya_CV.pdf"
-                rel="noopener noreferrer"
-              >
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                  <polyline points="7 10 12 15 17 10" />
-                  <line x1="12" y1="15" x2="12" y2="3" />
-                </svg>
-                Download CV
-              </a>
+              href={cvDownloadUrl}
+              download="Siddhu_Shkya_CV.pdf"
+              rel="noopener noreferrer"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+              Download CV
+            </a>
             <a className="button secondary" href="#work">View projects</a>
           </div>
 
